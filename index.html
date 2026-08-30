@@ -6,8 +6,22 @@
     <title>LLM 은 읽고 사람은 볼 수 없는 설명 — MCP2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-B7EgiFQP.js"></script>
+    <!-- 제목이 700 을 쓴다. 안 받아두면 브라우저가 600 을 늘려 가짜 볼드를 만들고,
+         56px 헤드라인에서 획이 뭉개진다. -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+      /* 흰 종이. 스크롤 튐 방지로 바탕색을 body 에도 박는다. */
+      html, body { background: #ffffff; margin: 0; }
+      ::selection { background: #bf30211f; }
+
+      /* 넓은 표의 가로 추적. 줄무늬는 인쇄·스크린샷에서, 호버는 화면에서 일한다.
+         둘 다 아주 옅게 — 여기서 색이 세지면 의미색(보라·청록·빨강)과 경쟁한다. */
+      .dt tbody tr:nth-child(even) { background: #f4f5f2; }
+      .dt tbody tr:hover { background: #e6eae3; }
+      /* sticky 헤더·합계행이 줄무늬 위로 지나가야 하므로 불투명 배경을 유지한다. */
+      .dt thead th, .dt tfoot td { background: #ffffff; }
+    </style>
+    <script type="module" crossorigin src="./assets/index-DrJo85oz.js"></script>
   </head>
   <body><div id="root"></div></body>
 </html>
